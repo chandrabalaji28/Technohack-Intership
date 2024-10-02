@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function() {
+      emailjs.init("eYoE-llu2uxYdW4l1");  
+   })();
+</script>
+
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home">CHANDRA BALAJI</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Get Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm CHANDRA BALAJI</h1>
+                <p>Welcome to my professional portfolio! I am a passionate Java Fullstack developer.</p>
+                <a href="#projects" class="cta-button">View My Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="./chandra balaji.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am an aspiring Java Developer with a solid background in designing and developing scalable web applications. I have experience with both front-end and back-end technologies, including Java, HTML, CSS, JavaScript, and MySQL. My expertise spans database design, OOP principles, and best coding practices to create efficient, maintainable solutions.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+         <!-- Skills Section -->
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-item">
+            <i class="fab fa-java"></i>
+            <p>Java</p>
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS</p>
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+        </div>
+      
+        <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <p>MySQL</p>
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-bootstrap"></i>
+            <p>Bootstrap</p>
+        </div>
+       
+        <div class="skill-item">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+        </div>
+       
+    
+    </div>
+</section>
+
+
+        <div class="projects" id="projects">
+            <h2>My Projects</h2>
+            
+            <div class="project-container">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <h3>Machine Learning Based on Spam Comments Detection on Youtube</h3>
+                    <div class="image-gallery">
+                        <img src="./Picture1.png" alt="Project 1 Image 1" class="project-img" onclick="openModal(this)">
+                        <img src="./Picture2.png" alt="Project 1 Image 2" class="project-img" onclick="openModal(this)">
+                        <img src="./Picture3.png" alt="Project 1 Image 2" class="project-img" onclick="openModal(this)">
+
+                        
+
+                        <img src="./Picture4.png" alt="Project 1 Image 3" class="project-img" onclick="openModal(this)">
+                    </div>
+                    <p><span id="project-item">Technologies:</span>
+                     Python, Natural Language Processing (NLP), HTML, CSS, JavaScript, Bootstrap, MySQL</p>
+                </div>
+        
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <h3>Calculator</h3>
+                    <div class="image-gallery">
+                        <img src="./Screenshot 2024-09-28 092607.png" alt="Project 2 Image 1" class="project-img" onclick="openModal(this)">
+                        <img src="./Screenshot 2024-09-28 092625.png" alt="Project 2 Image 1" class="project-img" onclick="openModal(this)">
+
+                    </div>
+                    <p><span id="project-item">Technologies:</span> HTML, CSS, and JavaScript, with features like theme toggling (light/dark mode) </p>
+                </div>
+        
+              
+              
+            </div>
+        </div>
+        
+        <!-- Full-screen modal to display images -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+        
+        
+        
+        
+    </main>
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-div">
+            <div class="mydetails-div">
+                <h2>This is Chandra Balaji</h2>
+                <h1>You can contact me from here</h1>
+                <p>
+                    <a href="" class="fas fa-envelope"></a> 
+                    chandrabalajis28@gmail.com
+                    <br/><br/>
+                    <a href="" ></a>
+                    +91 9391096986
+                </p>
+            </div>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/balaji-chandra/" target="_blank" class="fab fa-linkedin-in"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+            
+            <a href="https://github.com/chandrabalaji28" target="_blank" class="fab fa-github"></a>
+        </div>
+        <p>&copy; 2024 Chandra Balaji. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
